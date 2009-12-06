@@ -1,0 +1,198 @@
+<html>
+<title>Currently in the 'pu' branch</title>
+<style type="text/css" media="all">
+    body {
+      width: 600px;
+    }
+</style>
+<body>
+<h1>Currently in the 'pu' branch</h1>
+<p>The comment about each topic branch is taken from the latest
+<em>What's cooking in erlang/otp</em> email and may no longer apply if
+the topic branch has been updated.
+<ul>
+<li><a href="http://github.com/erlang/otp/commit/3a418e5b40e91a380ae15c896a9e354f79774b06">jp/gcc-detection-in-makefiles</a> (erts):
+
+<ul>
+<li><a href="http://github.com/erlang/otp/commit/84e0caf10a44f045946b1902fcb7b6256b8cb24c">Fix GCC detection in ERTS configure script and Makefiles</a></li>
+</ul>
+<p>Corrected by me since it did not work on all versions of autoconf
+and/or shells. Will probably graduate soon.
+
+<p>
+</li>
+<li><a href="http://github.com/erlang/otp/commit/9548b2ac55750a9028492930b94c6595446460aa">yh/fix-re-run-corruption</a> (erts):
+
+<ul>
+<li><a href="http://github.com/erlang/otp/commit/eed3903e0a557a390c562cf4249bf9b9ef72e133">Fix re:run/3 sometimes executes on corrupted data by garbage collection</a></li>
+</ul>
+<p>
+<font color="red">This topic branch introduces 1 line with whitespace errors.</font>
+<p></li>
+<li><a href="http://github.com/erlang/otp/commit/bb8e2280eb844d4657adb9a008b67bde99f14131">egil/binary-gc</a> (erts):
+
+<ul>
+<li><a href="http://github.com/erlang/otp/commit/bcd0b649dd68a740efb8d8b8544d8fb4883b53da">Add documentation for binary heap size settings.</a></li>
+<li><a href="http://github.com/erlang/otp/commit/33a2f7a2917a5ff92fea7a5e0f733062e8e2beaa">Add tracing capabilities for binary virtual heap</a></li>
+<li><a href="http://github.com/erlang/otp/commit/bfe4308c67463cd4868ef9688c99176abc371db6">Add min heap size start options to beam and erl</a></li>
+<li><a href="http://github.com/erlang/otp/commit/94f7a20947289a62a2608bfe807a984181bbf347">Improve binary garbage collection</a></li>
+</ul>
+<p></li>
+<li><a href="http://github.com/erlang/otp/commit/d04d8ff9676f76ee35acff980130262cc9a5e518">wt/ssl-resume-session</a> (ssl):
+
+<ul>
+<li><a href="http://github.com/erlang/otp/commit/3918e9ce69242f0f8c96bec16a6e597c90f8e465">new_ssl fix session reuse</a></li>
+</ul>
+<p>
+<font color="red">This topic branch introduces 2 lines with whitespace errors.</font>
+<p></li>
+<li><a href="http://github.com/erlang/otp/commit/9be3e5766f50981a9fdd8d2bbcc6788317aadb50">wt/ssl_certreq_send_ca_list</a> (public_key, ssl):
+
+<ul>
+<li><a href="http://github.com/erlang/otp/commit/638ad46432719e973c458cc65b0252081599b7f1">Send CA list during Certificate Request in new_ssl</a></li>
+</ul>
+<p></li>
+<li><a href="http://github.com/erlang/otp/commit/828a6887258c3e8e49538a03022762067873e908">jv/binary_to_term-opts</a> (erts):
+
+<ul>
+<li><a href="http://github.com/erlang/otp/commit/be22f534f3954ff1762b055868ae2497232121ff">document ErtsExternalDist flags and CON_ID mask</a></li>
+<li><a href="http://github.com/erlang/otp/commit/77ce185291b73438b7987587c0871041e5a66d83">add options to binary_to_term</a></li>
+</ul>
+<p>Will probably graduate soon.
+
+<p>
+</li>
+<li><a href="http://github.com/erlang/otp/commit/3cace3269cd542297e09f6f2c47cd93f53e7d409">sc/sctp-connect-nowait</a> (kernel):
+
+<ul>
+<li><a href="http://github.com/erlang/otp/commit/ae3d819044ea6fb77ecf15ceed4a0cfe611572b4">Implement a non-blocking SCTP connect</a></li>
+</ul>
+<p></li>
+<li><a href="http://github.com/erlang/otp/commit/164bdadfce7dabccec767cf0604e94c619ed317c">km/http-host-header-fix</a> (inets):
+
+<ul>
+<li><a href="http://github.com/erlang/otp/commit/75a3f7c4c40f7b82384054b9826a25777d51f6b9">Fix inets HTTP client bug crafting Host header when port is not 80</a></li>
+</ul>
+<p></li>
+<li><a href="http://github.com/erlang/otp/commit/39fd73cfba4407f3e02f3c46f14133922a35e878">kj/epmd-port2resp-trunc-extra</a> (erts):
+
+<ul>
+<li><a href="http://github.com/erlang/otp/commit/a841673669604f5be838a0a0042f05e18ae3827c">Handle "extra" field according to specs in ALIVE2_REQ and PORT2_RESP.</a></li>
+</ul>
+<p>Will probably graduate soon.
+
+<p>
+</li>
+<li><a href="http://github.com/erlang/otp/commit/8fc6ffcf430d3922b938091e1c8acf55bf21dcd8">va/rb-improvements</a> (sasl):
+
+<ul>
+<li><a href="http://github.com/erlang/otp/commit/5391383193d4fe024c470c8db7579f45dd9a8c3d">New function to filter reports by date</a></li>
+<li><a href="http://github.com/erlang/otp/commit/ed283484cfff13405da02e097e98fe2a8dc02c65">New rb:filter/1 function to ease report filtering</a></li>
+<li><a href="http://github.com/erlang/otp/commit/e5bd09137ea459255f1661efc4cc5ca1bea4bfdf">Add rb:re/1 to grep reports using the re module</a></li>
+<li><a href="http://github.com/erlang/otp/commit/07c6ad442552a1b8d4d10a68b526378368a59253">Fix minor typo in read_report/1</a></li>
+</ul>
+<p></li>
+<li><a href="http://github.com/erlang/otp/commit/49f1c219187ef3e97d745dd1a4cc5fa611eb8169">uw/shell-tab-completion</a> (stdlib):
+
+<ul>
+<li><a href="http://github.com/erlang/otp/commit/1c3a6c89c4f8d25dc0a3f71f4967ad80729cdbfe">Shell tab completion now works for quoted module and function names</a></li>
+</ul>
+<p></li>
+<li><a href="http://github.com/erlang/otp/commit/f6826cfdf56e40e32887a626aa4da011475cb70a">dgud/dbg_mac_menu</a> (debugger):
+
+<ul>
+<li><a href="http://github.com/erlang/otp/commit/85f849c570bc99fe33d3001d8b4f9705ca3a833a">Dbg: Expand the module listbox when window grows.</a></li>
+<li><a href="http://github.com/erlang/otp/commit/87f6e4c3bcddc166d2109e72ae8add6adfca26cc">Dbg: Cut variable bindings after 80 chars.</a></li>
+<li><a href="http://github.com/erlang/otp/commit/e27e41b63225b1be5ce2f338d219a39429079fec">Dbg: Fixed documentation links to the new index.html</a></li>
+<li><a href="http://github.com/erlang/otp/commit/438d778eb1ccf432ddc8e275e5ee3e91f590cf8c">Dbg Fixed mac gui issues</a></li>
+</ul>
+<p></li>
+<li><a href="http://github.com/erlang/otp/commit/f0b35022555432adc949c2414ce70145409a350e">cf/compile_warning_as_error</a> (compiler, erts):
+
+<ul>
+<li><a href="http://github.com/erlang/otp/commit/d29a3356dcd6664c840590aa751311ae6bf28fa1">Add option -Werror in erlc(1)</a></li>
+<li><a href="http://github.com/erlang/otp/commit/13124f55353f7942ead0c1ed32b8a3bce1f396d3">compile: add flag warnings_as_errors to treat warnings as errors</a></li>
+<li><a href="http://github.com/erlang/otp/commit/8a944af92a3fa6ebdd6ee2f3c1a1e40ddf26d40b">compile.erl: remove trailing whitespace</a></li>
+</ul>
+<p></li>
+<li><a href="http://github.com/erlang/otp/commit/950cae896c989a850c89e3022af65a05dc14c025">jp/dependencies_makefile</a> (compiler, erts):
+
+<ul>
+<li><a href="http://github.com/erlang/otp/commit/c0734e8a85270d08beda34c4e28aed21b350fb18">Add dependencies Makefile generation to erlc(1) and compile(3)</a></li>
+</ul>
+<p></li>
+<li><a href="http://github.com/erlang/otp/commit/077561bd00a12939cb71080141f2c71f1a4bf4ab">cf/epp-macro-overloading</a> (otp, stdlib):
+
+<ul>
+<li><a href="http://github.com/erlang/otp/commit/162ec270ed3c9a2a1aa8469b61525f3f184a4057">update the documentation on preprocessor in the reference manual</a></li>
+<li><a href="http://github.com/erlang/otp/commit/8dcc9f8f1c2949d5d6d820294b3584c097c932e3">epp: change rules to choose the right version of a macro</a></li>
+<li><a href="http://github.com/erlang/otp/commit/f7a89593e50a5be9e73b954109a4009ff07b4878">epp: Add support of macros overloading</a></li>
+<li><a href="http://github.com/erlang/otp/commit/52543e06781ef0e9676f75636d0d069c1a813664">epp: fix bug in the function scan_undef</a></li>
+</ul>
+<p>Extend the pre-processor to allow overloading of macros with
+the same name but different arities. Now with documentation.
+
+<p>
+</li>
+<li><a href="http://github.com/erlang/otp/commit/ac77feee412bef9353960cb887a8250c09b4e92c">tc/premodern-fpe</a> (erts):
+
+<ul>
+<li><a href="http://github.com/erlang/otp/commit/6e606582a698bbf8e8f31d3d5b2573bcfdefbb9a">Add -D_XOPEN_SOURCE to CPPFLAGS on Darwin platforms</a></li>
+<li><a href="http://github.com/erlang/otp/commit/4160466b3b32ddb93ed50c59288ada2df38a4caf">Test for reliable fpes on Darwin platforms without DARWIN_MODERN_MCONTEXT</a></li>
+</ul>
+<p>Reliable floating point exceptions is necessary for hipe to
+be enabled. I can confirm that hipe can now be enabled on
+Snow Leopard (10.6) and that it speeds up building of the
+Dialyzer PLT.
+
+<p>This branch depends on functionality that is deprecated
+in Mac OS 10.6, so it might be necessary to find another solution
+when 10.7 will be released (in case it removes the deprecated
+functionality).
+
+<p>We would like to hear about how this patch works on older versions
+of Mac OS X. It is known to work on Tiger/PPC.
+
+<p>
+</li>
+<li><a href="http://github.com/erlang/otp/commit/e845b0df3c123690c00841fff0fb774d7dc6f8f5">bg/otp_build-improvements</a> (otp, stdlib):
+
+<ul>
+<li><a href="http://github.com/erlang/otp/commit/74b56ab83e6fbe47453be3e53b05639957ee750b">Fix spelling, remove obsolete command</a></li>
+<li><a href="http://github.com/erlang/otp/commit/bb8cf9b2ad02b2560eaf08e9d0227bea6ac8e2a7">Support updating preloaded files in a git repository</a></li>
+<li><a href="http://github.com/erlang/otp/commit/86e14df69670089321c6b9a3c57f5b9417579825">Support updating the primary bootstrap in a git repository</a></li>
+<li><a href="http://github.com/erlang/otp/commit/12839e152e26217e2491d6a4c8d810608d03fa27">Determine which VCS is being used</a></li>
+<li><a href="http://github.com/erlang/otp/commit/b197d921e48177a9a2545be4577922c0d41e0aaa">stdlib makefile: Add explicit rule</a></li>
+</ul>
+<p></li>
+<li><a href="http://github.com/erlang/otp/commit/f72084b67c99027f5a93ecda0ee87dc666f159fc">at/odbc_osx_fix</a> (odbc):
+
+<ul>
+<li><a href="http://github.com/erlang/otp/commit/88c71c95d23afc3d185d64b050cb5fba243d4cee">Workaround broken ODBC implementation on OSX 10.5</a></li>
+</ul>
+<p></li>
+<li><a href="http://github.com/erlang/otp/commit/0a661922f4f6e5ee6cbda4e8f1185fa4d7a5d423">db/tv_nthtail_fix</a> (tv):
+
+<ul>
+<li><a href="http://github.com/erlang/otp/commit/abe07595f90a5a83ce96100fbd1c0da40a765704">Fix for tv which restarts while trying to open a table</a></li>
+</ul>
+<p>We will cook this topic for a while and include it in the next
+release unless someone finds a problem with it or a better fix.
+
+<p>
+</li>
+<li><a href="http://github.com/erlang/otp/commit/9d9c9a84689dd2a9101b22d05107aa38609c4499">bd/http_chunk_fix</a> (inets):
+
+<ul>
+<li><a href="http://github.com/erlang/otp/commit/c2553beb7e6090cf9b0f4d662a99717c25221e1c">http_chunk data handling/passing improvement.</a></li>
+</ul>
+<p></li>
+<li><a href="http://github.com/erlang/otp/commit/db3b6e0f85c8e628ab8f08991e1b91b5f6acbdac">po/odbc-update-delete-no-rows</a> (odbc):
+
+<ul>
+<li><a href="http://github.com/erlang/otp/commit/1a564f84da39a309e40353ae52f2bb4366268a1e">SQL_NO_DATA and SQLSTATE 00000 indicate success for updates/deletes that affect no rows</a></li>
+</ul>
+<p></li>
+</ul>
+</body>
+</html>
