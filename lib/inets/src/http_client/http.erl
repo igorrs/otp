@@ -293,10 +293,18 @@ handle_request(Method, Url,
 	{true, self} ->
 	    {error, streaming_error};
 	_ ->
-	    RecordHeaders = header_record(NewHeaders, 
-					  #http_request_h{}, 
-					  Host, 
-					  HTTPOptions#http_options.version),
+        RecordHeaders = case Port of
+            80 ->
+                header_record(NewHeaders,
+                        #http_request_h{},
+                        Host,
+                        HTTPOptions#http_options.version);
+            _ ->
+                header_record(NewHeaders,
+                        #http_request_h{},
+                        Host++":"++integer_to_list(Port),
+                        HTTPOptions#http_options.version)
+                end,
 	    Request = #request{from     = self(),
 			       scheme   = Scheme, 
 			       address  = {Host,Port},
